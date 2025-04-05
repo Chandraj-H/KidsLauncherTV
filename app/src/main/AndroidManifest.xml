@@ -9,6 +9,13 @@
         android:name="android.software.leanback"
         android:required="true" />
 
+    <queries>
+        <!-- Allows querying all installed launchable apps -->
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+    </queries>
 
     <!--allow backup=false because factory reset shouldn't be possible-->
     <!--Prevent sys from stopping the app add persistent=true-->
