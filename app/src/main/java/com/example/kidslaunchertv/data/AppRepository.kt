@@ -20,5 +20,5 @@ fun getInstalledApps(context: Context): List<AppModel> {
         )
     }
 
-    return apps.filter { isAppAllowed(it.packageName) }
+    return apps//apps.filter { isAppAllowed(it.packageName) }
 }

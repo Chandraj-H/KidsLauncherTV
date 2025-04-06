@@ -23,7 +23,7 @@ fun KidsLauncherScreen(
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color(0xFF2196F3))
+            .background(Color(0xFFffffff))
             .padding(16.dp)
     ) {
         Row(
@@ -34,12 +34,12 @@ fun KidsLauncherScreen(
                 text = "Kids Mode",
                 fontSize = 32.sp,
                 fontWeight = FontWeight.Bold,
-                color = Color.White
+                color = Color.Black
             )
             Text(
                 text = "Exit",
-                fontSize = 18.sp,
-                color = Color.Yellow,
+                fontSize = 24.sp,
+                color = Color.Black,
                 modifier = Modifier
                     .clickable { onSettingsClick() }
             )
